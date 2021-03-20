@@ -1,0 +1,1 @@
+pandoc.wasm filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+  <title>pandoc</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script
+    data-dapp-detection="">!function () { let e = !1; function n() { if (!e) { const n = document.createElement("meta"); n.name = "dapp-detected", document.head.appendChild(n), e = !0 } } if (window.hasOwnProperty("ethereum")) { if (window.__disableDappDetectionInsertion = !0, void 0 === window.ethereum) return; n() } else { var t = window.ethereum; Object.defineProperty(window, "ethereum", { configurable: !0, enumerable: !1, set: function (e) { window.__disableDappDetectionInsertion || n(), t = e }, get: function () { if (!window.__disableDappDetectionInsertion) { const e = arguments.callee; e && e.caller && e.caller.toString && -1 !== e.caller.toString().indexOf("getOwnPropertyNames") || n() } return t } }) } }();</script>
+</head>
+
+<body>
+  <textarea id="textarea" rows="32" cols="64"></textarea>
+  <select id="select_src">
+    <option>select input format</option>
+    <option value="docbook">docbook</option>
+    <option value="html">html</option>
+    <option value="latex">latex</option>
+    <option value="markdown">markdown</option>
+    <option value="mediawiki">mediawiki</option>
+    <option value="opml">opml</option>
+    <option value="org">org</option>
+    <option value="rst">rst</option>
+    <option value="t2t">t2t</option>
+    <option value="textile">textile</option>
+    <option value="twiki">twiki</option>
+  </select>
+  <select id="select_dst">
+    <option>select output format</option>
+    <option value="asciidoc">asciidoc</option>
+    <option value="docbook">docbook</option>
+    <option value="dokuwiki">dokuwiki</option>
+    <option value="html">html</option>
+    <option value="icml">icml</option>
+    <option value="latex">latex</option>
+    <option value="markdown">markdown</option>
+    <option value="mediawiki">mediawiki</option>
+    <option value="opendocument">opendocument</option>
+    <option value="opml">opml</option>
+    <option value="org">org</option>
+    <option value="plain">plain</option>
+    <option value="rst">rst</option>
+    <option value="texinfo">texinfo</option>
+    <option value="textile">textile</option>
+  </select>
+  <button id="button">Convert</button>
+  <script src="pandoc.js"></script>
+
+
+
+</body>
+<div style="display: block; opacity: 1; color-scheme: auto;"></div>
+
+</html>
